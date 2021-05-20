@@ -10,11 +10,6 @@ def zyanken
  puts "-------------"
  puts "あなたは#{hands[zyanken_zibun]}を出しました！"
  puts "相手は#{hands[zynaken_aite]}を出しました！"
- if zyanken_zibun > 2
-  puts "-------------"
-  puts "0-2から選択してください"
-  return true
- end
  puts "-------------"
 
  #あいこの処理
@@ -22,7 +17,7 @@ def zyanken
    puts "あいこで・・・"
    return true
    
-  #じゃんけんに勝った時の処理
+  #じゃんけんに勝った時のあっち向いてほいの処理
   elsif (zyanken_zibun == 0 and zynaken_aite == 1)||(zyanken_zibun == 1 and zynaken_aite == 2)||(zyanken_zibun == 2 and zynaken_aite == 0)
     puts "じゃんけんに勝ったぞ！"
     puts "あっちむいて・・・"
@@ -51,7 +46,7 @@ def zyanken
      return true
     end
    
-   #じゃんけんに負けた時の処理
+   #じゃんけんに負けた時のあっち向いてほいの処理
    elsif (zyanken_zibun == 0 and zynaken_aite == 2)||(zyanken_zibun == 1 and zynaken_aite == 0)||(zyanken_zibun == 2 and zynaken_aite == 1)
     puts "じゃんけんに負けたぞ！"
     puts "あっちむいて・・・"
